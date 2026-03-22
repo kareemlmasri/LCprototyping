@@ -400,6 +400,7 @@
     border-radius: var(--radius-card); box-shadow: var(--shadow-card);
     overflow: hidden; position: relative; cursor: pointer;
     transition: transform 0.15s ease;
+    display: flex; flex-direction: column;
   }
   .product-card:active { transform: scale(0.97); }
   .card-image {
@@ -454,7 +455,7 @@
     padding: 2px 8px; border-radius: var(--radius-pill);
   }
 
-  .card-body { padding: 10px 12px 12px; }
+  .card-body { padding: 10px 12px 12px; display: flex; flex-direction: column; flex: 1; }
   .card-price-row { display: flex; align-items: baseline; gap: 4px; }
   .card-price { font-size: 20px; font-weight: 700; color: var(--color-primary-navy); letter-spacing: -0.4px; line-height: 1; }
   .card-currency { font-size: 11px; font-weight: 600; color: var(--color-grey-3); }
@@ -474,7 +475,7 @@
     display: -webkit-box; -webkit-line-clamp: 2;
     -webkit-box-orient: vertical; overflow: hidden;
   }
-  .card-ctas { display: flex; flex-direction: column; gap: 4px; margin-top: 8px; }
+  .card-ctas { display: flex; flex-direction: column; gap: 4px; margin-top: auto; padding-top: 8px; }
   .card-btn {
     height: 40px; border-radius: var(--radius-card-button);
     display: flex; align-items: center; justify-content: center; gap: 6px;
@@ -818,7 +819,7 @@
         <div class="card-desc">PUBG $1 (60 UC)</div>
         <div class="card-ctas">
           <button class="card-btn buy-now"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M11 3L7 11h3l-1 6 5-8h-3l1-6z"/></svg>Buy Now</button>
-          <button class="card-btn add-cart"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6h12l-1.5 7H7.5L6 6zM9 16a1 1 0 100 2 1 1 0 000-2zM15 16a1 1 0 100 2 1 1 0 000-2z"/></svg>Add to Cart</button>
+          <button class="card-btn add-cart"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h2l2.5 10h8l2-7H7"/><circle cx="9" cy="17" r="1.5"/><circle cx="15" cy="17" r="1.5"/></svg>Add to Cart</button>
         </div>
       </div>
     </div>
@@ -837,7 +838,7 @@
         <div class="card-desc">PUBG $5 (300 + Free 25 UC)</div>
         <div class="card-ctas">
           <button class="card-btn buy-now"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M11 3L7 11h3l-1 6 5-8h-3l1-6z"/></svg>Buy Now</button>
-          <button class="card-btn add-cart"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6h12l-1.5 7H7.5L6 6zM9 16a1 1 0 100 2 1 1 0 000-2zM15 16a1 1 0 100 2 1 1 0 000-2z"/></svg>Add to Cart</button>
+          <button class="card-btn add-cart"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h2l2.5 10h8l2-7H7"/><circle cx="9" cy="17" r="1.5"/><circle cx="15" cy="17" r="1.5"/></svg>Add to Cart</button>
         </div>
       </div>
     </div>
@@ -856,7 +857,7 @@
         <div class="card-desc">PUBG $10 (600 + Free 60 UC)</div>
         <div class="card-ctas">
           <button class="card-btn buy-now"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M11 3L7 11h3l-1 6 5-8h-3l1-6z"/></svg>Buy Now</button>
-          <button class="card-btn add-cart"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6h12l-1.5 7H7.5L6 6zM9 16a1 1 0 100 2 1 1 0 000-2zM15 16a1 1 0 100 2 1 1 0 000-2z"/></svg>Add to Cart</button>
+          <button class="card-btn add-cart"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h2l2.5 10h8l2-7H7"/><circle cx="9" cy="17" r="1.5"/><circle cx="15" cy="17" r="1.5"/></svg>Add to Cart</button>
         </div>
       </div>
     </div>
@@ -875,7 +876,7 @@
         <div class="card-desc">PUBG $10 (600 + Free 60 UC) — KSA</div>
         <div class="card-ctas">
           <button class="card-btn buy-now"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M11 3L7 11h3l-1 6 5-8h-3l1-6z"/></svg>Buy Now</button>
-          <button class="card-btn add-cart"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6h12l-1.5 7H7.5L6 6zM9 16a1 1 0 100 2 1 1 0 000-2zM15 16a1 1 0 100 2 1 1 0 000-2z"/></svg>Add to Cart</button>
+          <button class="card-btn add-cart"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h2l2.5 10h8l2-7H7"/><circle cx="9" cy="17" r="1.5"/><circle cx="15" cy="17" r="1.5"/></svg>Add to Cart</button>
         </div>
       </div>
     </div>
@@ -894,7 +895,7 @@
         <div class="card-desc">PUBG $25 (1500 + Free 300 UC)</div>
         <div class="card-ctas">
           <button class="card-btn buy-now"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M11 3L7 11h3l-1 6 5-8h-3l1-6z"/></svg>Buy Now</button>
-          <button class="card-btn add-cart"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6h12l-1.5 7H7.5L6 6zM9 16a1 1 0 100 2 1 1 0 000-2zM15 16a1 1 0 100 2 1 1 0 000-2z"/></svg>Add to Cart</button>
+          <button class="card-btn add-cart"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h2l2.5 10h8l2-7H7"/><circle cx="9" cy="17" r="1.5"/><circle cx="15" cy="17" r="1.5"/></svg>Add to Cart</button>
         </div>
       </div>
     </div>
@@ -913,7 +914,7 @@
         <div class="card-desc">PUBG $50 (3000 + Free 850 UC)</div>
         <div class="card-ctas">
           <button class="card-btn buy-now"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M11 3L7 11h3l-1 6 5-8h-3l1-6z"/></svg>Buy Now</button>
-          <button class="card-btn add-cart"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6h12l-1.5 7H7.5L6 6zM9 16a1 1 0 100 2 1 1 0 000-2zM15 16a1 1 0 100 2 1 1 0 000-2z"/></svg>Add to Cart</button>
+          <button class="card-btn add-cart"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h2l2.5 10h8l2-7H7"/><circle cx="9" cy="17" r="1.5"/><circle cx="15" cy="17" r="1.5"/></svg>Add to Cart</button>
         </div>
       </div>
     </div>
@@ -932,7 +933,7 @@
         <div class="card-desc">PUBG $100 (6000 + Free 2100 UC)</div>
         <div class="card-ctas">
           <button class="card-btn buy-now"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M11 3L7 11h3l-1 6 5-8h-3l1-6z"/></svg>Buy Now</button>
-          <button class="card-btn add-cart"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6h12l-1.5 7H7.5L6 6zM9 16a1 1 0 100 2 1 1 0 000-2zM15 16a1 1 0 100 2 1 1 0 000-2z"/></svg>Add to Cart</button>
+          <button class="card-btn add-cart"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h2l2.5 10h8l2-7H7"/><circle cx="9" cy="17" r="1.5"/><circle cx="15" cy="17" r="1.5"/></svg>Add to Cart</button>
         </div>
       </div>
     </div>
@@ -951,7 +952,7 @@
         <div class="card-desc">PUBG $5 (300 + Free 25 UC) — Turkey</div>
         <div class="card-ctas">
           <button class="card-btn buy-now"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M11 3L7 11h3l-1 6 5-8h-3l1-6z"/></svg>Buy Now</button>
-          <button class="card-btn add-cart"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6h12l-1.5 7H7.5L6 6zM9 16a1 1 0 100 2 1 1 0 000-2zM15 16a1 1 0 100 2 1 1 0 000-2z"/></svg>Add to Cart</button>
+          <button class="card-btn add-cart"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h2l2.5 10h8l2-7H7"/><circle cx="9" cy="17" r="1.5"/><circle cx="15" cy="17" r="1.5"/></svg>Add to Cart</button>
         </div>
       </div>
     </div>
@@ -970,7 +971,7 @@
         <div class="card-desc">PUBG $10 (600 + Free 60 UC) — Turkey</div>
         <div class="card-ctas">
           <button class="card-btn buy-now"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M11 3L7 11h3l-1 6 5-8h-3l1-6z"/></svg>Buy Now</button>
-          <button class="card-btn add-cart"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6h12l-1.5 7H7.5L6 6zM9 16a1 1 0 100 2 1 1 0 000-2zM15 16a1 1 0 100 2 1 1 0 000-2z"/></svg>Add to Cart</button>
+          <button class="card-btn add-cart"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h2l2.5 10h8l2-7H7"/><circle cx="9" cy="17" r="1.5"/><circle cx="15" cy="17" r="1.5"/></svg>Add to Cart</button>
         </div>
       </div>
     </div>
@@ -989,7 +990,7 @@
         <div class="card-desc">PUBG $10 (600 + Free 60 UC) — UAE</div>
         <div class="card-ctas">
           <button class="card-btn buy-now"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M11 3L7 11h3l-1 6 5-8h-3l1-6z"/></svg>Buy Now</button>
-          <button class="card-btn add-cart"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6h12l-1.5 7H7.5L6 6zM9 16a1 1 0 100 2 1 1 0 000-2zM15 16a1 1 0 100 2 1 1 0 000-2z"/></svg>Add to Cart</button>
+          <button class="card-btn add-cart"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h2l2.5 10h8l2-7H7"/><circle cx="9" cy="17" r="1.5"/><circle cx="15" cy="17" r="1.5"/></svg>Add to Cart</button>
         </div>
       </div>
     </div>
